@@ -29,6 +29,7 @@ setup(
     version='1.1',
     description='Celery Timeout decorator',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Siddharth Prajosh',
     author_email='sprajosh@gmail.com',
     url='https://github.com/sprajosh/process-timer',
