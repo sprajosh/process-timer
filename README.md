@@ -72,7 +72,7 @@ case - by using multiprocessing. To use it, just pass
         mytest()
 ```
 
->_warning_
+>_**Warning**_
     Make sure that in case of multiprocessing strategy for timeout, your function does not return objects which cannot
     be pickled, otherwise it will fail at marshalling it between master and child processes.
 
