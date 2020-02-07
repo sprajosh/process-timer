@@ -1,6 +1,4 @@
 """Setuptools entry point."""
-import codecs
-import os
 
 try:
     from setuptools import setup
@@ -18,11 +16,8 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries :: Python Modules'
 ]
 
-dirname = os.path.dirname(__file__)
-
-long_description = (
-    codecs.open(os.path.join(dirname, 'README.md'), encoding='utf-8').read()
-    )
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='process-timer',
